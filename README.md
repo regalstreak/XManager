@@ -1,7 +1,7 @@
 # [XManager](https://telegram.me/XManager)
 
 
-**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU General Public License](https://github.com/SEEDTEAM/XManager/blob/master/LICENSE)**.
+**An advanced and powerful administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under the [GNU Affero General Public License](https://github.com/regalstreak/XManager/blob/Supergroup/LICENSE)**.
 # Features
 
 * **A powerful antispam system with custom sensitivity for each group**
