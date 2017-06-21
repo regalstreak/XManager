@@ -8,13 +8,7 @@ update() {
 }
 
 install() {
-  patch -i "patches/disable-python-and-libjansson.patch" -p 0 --batch --forward
-  RET=$?;
-
   cd tg
-  if [ $RET -ne 0 ]; then
-    autoconf -i
-  fi
   ./configure && make
 
   RET=$?; if [ $RET -ne 0 ]; then
