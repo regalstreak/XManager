@@ -5,12 +5,9 @@ cd $THIS_DIR
 
 update() {
   git pull
-  git submodule update --init --recursive
 }
 
 install() {
-  git pull
-  git submodule update --init --recursive
   patch -i "patches/disable-python-and-libjansson.patch" -p 0 --batch --forward
   RET=$?;
 
