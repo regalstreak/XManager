@@ -47,8 +47,5 @@ data/tmp/*.*
 !data/photos/.gitkeep
 !data/.gitkeep
 
-# Telegram-cli
-tg/
-
 # Logs
 logs/
