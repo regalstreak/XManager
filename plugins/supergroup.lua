@@ -1,12 +1,12 @@
-﻿--Begin supergrpup.lua
+--Begin supergrpup.lua
 --Check members #Add supergroup
 local function check_member_super(cb_extra, success, result)
   local receiver = cb_extra.receiver
   local data = cb_extra.data
   local msg = cb_extra.msg
   if type(result) == 'boolean' then
-    print('This is a old message!')
-    return reply_msg(msg.id, '[Not supported] This is a old message!', ok_cb, false)
+    print('This is an old message!')
+    return reply_msg(msg.id, '[Not supported] This is an old message!', ok_cb, false)
   end
   if success == 0 then
 	send_large_msg(receiver, "Promote me to admin first!")
@@ -55,8 +55,8 @@ local function check_member_superrem(cb_extra, success, result)
   local data = cb_extra.data
   local msg = cb_extra.msg
   if type(result) == 'boolean' then
-    print('This is a old message!')
-    return reply_msg(msg.id, '[Not supported] This is a old message!', ok_cb, false)
+    print('This is an old message!')
+    return reply_msg(msg.id, '[Not supported] This is an old message!', ok_cb, false)
   end
   for k,v in pairs(result) do
     local member_id = v.id
@@ -660,7 +660,7 @@ function get_message_callback(extra, success, result)
 	local print_name = user_print_name(msg.from):gsub("‮", "")
 	local name_log = print_name:gsub("_", " ")
 	if type(result) == 'boolean' then
-		print('This is a old message!')
+		print('This is an old message!')
 		return
 	end
 	if get_cmd == "id" and not result.action then
