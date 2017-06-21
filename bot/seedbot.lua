@@ -231,11 +231,7 @@ function create_config( )
     "supergroup",
     "whitelist",
     "msg_checks",
-    "anti-bot",
-    "images",
-    "media",
-    "time",
-    "translate"
+    "time"
     },
     sudo_users = {89522941,0,tonumber(our_id)},--Sudo users
     moderation = {data = 'data/moderation.json'},
@@ -609,23 +605,6 @@ Returns group logs
 
 !time [area]
 Displays the time of the area
-
-!translate [text]
-Translates certain text to English
-
-*Anti-Bot Feature:*
-!antibot enable
-Enable Anti-bot on current chat
-
-!antibot disable
-Disable Anti-bot on current chat
-
-!antibot allow <botId>
-Allow <botId> on this chat
-
-!antibot disallow <botId>
-Disallow <botId> on this chat
-
 
 **You can use "#", "!", or "/" to begin all commands
 
