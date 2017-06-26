@@ -49,3 +49,4 @@ data/tmp/*.*
 
 # Logs
 logs/
+log.txt
