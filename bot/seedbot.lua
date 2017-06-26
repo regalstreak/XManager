@@ -54,7 +54,6 @@ function msg_valid(msg)
   -- Don't process outgoing messages
   if msg.out then
     print('\27[36mNot valid: msg from us\27[39m')
-    return false
   end
 
   -- Before bot was started
@@ -80,7 +79,6 @@ function msg_valid(msg)
 
   if msg.from.id == our_id then
     print('\27[36mNot valid: Msg from our id\27[39m')
-    return false
   end
 
   if msg.to.type == 'encr_chat' then
@@ -233,7 +231,7 @@ function create_config( )
     "msg_checks",
     "time"
     },
-    sudo_users = {89522941,0,tonumber(our_id)},--Sudo users
+    sudo_users = {89522941,445424925},--Sudo users
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teleseed v4
 An advanced administration bot based on TG-CLI written in Lua
@@ -257,7 +255,7 @@ Our channels
 @teleseedch [English]
 @iranseed [persian]
 
-Our website 
+Our website
 http://teleseed.seedteam.org/
 ]],
     help_text_realm = [[
@@ -398,11 +396,11 @@ Unlock group settings
 
 !mute [all|audio|gifs|photo|video]
 mute group message types
-*If "muted" message type: user is kicked if message type is posted 
+*If "muted" message type: user is kicked if message type is posted
 
 !unmute [all|audio|gifs|photo|video]
 Unmute group message types
-*If "unmuted" message type: user is not kicked if message type is posted 
+*If "unmuted" message type: user is not kicked if message type is posted
 
 !set rules <text>
 Set <text> as rules
